@@ -1,2 +1,8 @@
 [and]
 other = "et"
+
+[pagination.previous]
+other = "Article précédent"
+
+[pagination.next]
+other = "Article suivant"

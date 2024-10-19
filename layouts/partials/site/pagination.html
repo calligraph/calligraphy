@@ -5,7 +5,7 @@
       {{- if .NextInSection }}
       <li class="pagination__button pagination__button--left">
         <a href="{{ .NextInSection.RelPermalink }}" class="pagination__title">
-          <span class="pagination__label pagination__label--previous">Next Post</span>
+          <span class="pagination__label pagination__label--previous">{{ T "pagination.previous" }}</span>
           {{ .NextInSection.Title }}
         </a>
       </li>
@@ -13,7 +13,7 @@
       {{ if .PrevInSection }}
       <li class="pagination__button pagination__button--right">
         <a href="{{ .PrevInSection.RelPermalink }}" class="pagination__title">
-          <span class="pagination__label pagination__label--next">Previous Post</span>
+          <span class="pagination__label pagination__label--next">{{ T "pagination.next" }}</span>
           {{ .PrevInSection.Title }}
         </a>
       </li>
