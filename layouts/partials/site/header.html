@@ -4,7 +4,7 @@
   <div class="site__container">
     <header class="banner__header" role="banner">
       <div class="banner__brand">
-        <a href="/" title="{{ .Site.Params.brand.title }} Home">
+        <a href="{{ "/" | relURL }}" title="{{ .Site.Params.brand.title }} Home">
           <span class="banner__name banner__name--long">
             {{- if .Site.Params.brand.logo }}
             <img src="{{ .Site.Params.brand.logo }}" alt="{{ .Site.Params.brand.name | default .Site.Title }}" class="brand__logo">
